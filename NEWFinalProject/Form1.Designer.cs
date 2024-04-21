@@ -38,10 +38,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 36F);
-            this.label1.Location = new System.Drawing.Point(343, 342);
+            this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(232, 232);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(707, 87);
+            this.label1.Size = new System.Drawing.Size(459, 57);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to the RES System!";
             // 
@@ -49,9 +50,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift SemiCondensed", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(592, 473);
+            this.label2.Location = new System.Drawing.Point(395, 307);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 58);
+            this.label2.Size = new System.Drawing.Size(123, 39);
             this.label2.TabIndex = 1;
             this.label2.Text = "You are: ";
             // 
@@ -59,9 +61,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DarkKhaki;
             this.button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(333, 552);
+            this.button1.Location = new System.Drawing.Point(222, 359);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(209, 80);
+            this.button1.Size = new System.Drawing.Size(139, 52);
             this.button1.TabIndex = 2;
             this.button1.Text = "Waiter";
             this.button1.UseVisualStyleBackColor = false;
@@ -71,9 +74,10 @@
             // 
             this.button2.BackColor = System.Drawing.Color.DarkKhaki;
             this.button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(580, 552);
+            this.button2.Location = new System.Drawing.Point(387, 359);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(212, 80);
+            this.button2.Size = new System.Drawing.Size(141, 52);
             this.button2.TabIndex = 3;
             this.button2.Text = "Cashier";
             this.button2.UseVisualStyleBackColor = false;
@@ -82,27 +86,30 @@
             // 
             this.button3.BackColor = System.Drawing.Color.DarkKhaki;
             this.button3.Font = new System.Drawing.Font("Bahnschrift Condensed", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(829, 552);
+            this.button3.Location = new System.Drawing.Point(553, 359);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(207, 80);
+            this.button3.Size = new System.Drawing.Size(138, 52);
             this.button3.TabIndex = 4;
             this.button3.Text = "Manager";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
             this.BackgroundImage = global::NEWFinalProject.Properties.Resources._71908;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1380, 969);
+            this.ClientSize = new System.Drawing.Size(920, 630);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

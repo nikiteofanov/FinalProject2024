@@ -38,13 +38,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.firstName = new System.Windows.Forms.TextBox();
+            this.lastName = new System.Windows.Forms.TextBox();
+            this.waiterID = new System.Windows.Forms.TextBox();
+            this.workDays = new System.Windows.Forms.TextBox();
+            this.breakfastButton = new System.Windows.Forms.RadioButton();
+            this.lunchButton = new System.Windows.Forms.RadioButton();
+            this.dinnerButton = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -52,30 +52,31 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift Condensed", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 37);
+            this.label1.Location = new System.Drawing.Point(27, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 43);
+            this.label1.Size = new System.Drawing.Size(0, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nikolay Teofanov";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift Condensed", 16F);
             this.label2.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.label2.Location = new System.Drawing.Point(41, 86);
+            this.label2.Location = new System.Drawing.Point(27, 56);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 39);
+            this.label2.Size = new System.Drawing.Size(0, 27);
             this.label2.TabIndex = 1;
-            this.label2.Text = "WaiterID: 10334";
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.DarkKhaki;
             this.button2.Font = new System.Drawing.Font("Bahnschrift Condensed", 17F);
-            this.button2.Location = new System.Drawing.Point(1062, 54);
+            this.button2.Location = new System.Drawing.Point(708, 35);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(231, 61);
+            this.button2.Size = new System.Drawing.Size(154, 40);
             this.button2.TabIndex = 3;
             this.button2.Text = "Tables";
             this.button2.UseVisualStyleBackColor = false;
@@ -85,9 +86,10 @@
             // 
             this.button4.BackColor = System.Drawing.Color.DarkKhaki;
             this.button4.Font = new System.Drawing.Font("Bahnschrift Condensed", 17F);
-            this.button4.Location = new System.Drawing.Point(555, 654);
+            this.button4.Location = new System.Drawing.Point(370, 425);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(307, 60);
+            this.button4.Size = new System.Drawing.Size(205, 39);
             this.button4.TabIndex = 5;
             this.button4.Text = "Create new order";
             this.button4.UseVisualStyleBackColor = false;
@@ -97,9 +99,10 @@
             // 
             this.button5.BackColor = System.Drawing.Color.DarkKhaki;
             this.button5.Font = new System.Drawing.Font("Bahnschrift Condensed", 17F);
-            this.button5.Location = new System.Drawing.Point(555, 748);
+            this.button5.Location = new System.Drawing.Point(370, 486);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(307, 60);
+            this.button5.Size = new System.Drawing.Size(205, 39);
             this.button5.TabIndex = 6;
             this.button5.Text = "View orders";
             this.button5.UseVisualStyleBackColor = false;
@@ -109,9 +112,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift Condensed", 19F);
-            this.label3.Location = new System.Drawing.Point(501, 252);
+            this.label3.Location = new System.Drawing.Point(334, 164);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 46);
+            this.label3.Size = new System.Drawing.Size(109, 31);
             this.label3.TabIndex = 7;
             this.label3.Text = "First name:";
             // 
@@ -119,9 +123,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift Condensed", 19F);
-            this.label4.Location = new System.Drawing.Point(501, 321);
+            this.label4.Location = new System.Drawing.Point(334, 209);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 46);
+            this.label4.Size = new System.Drawing.Size(107, 31);
             this.label4.TabIndex = 8;
             this.label4.Text = "Last name:";
             // 
@@ -129,9 +134,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 19F);
-            this.label5.Location = new System.Drawing.Point(529, 392);
+            this.label5.Location = new System.Drawing.Point(353, 255);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 46);
+            this.label5.Size = new System.Drawing.Size(88, 31);
             this.label5.TabIndex = 9;
             this.label5.Text = "WaiterID:";
             // 
@@ -139,9 +145,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 19F);
-            this.label6.Location = new System.Drawing.Point(506, 460);
+            this.label6.Location = new System.Drawing.Point(337, 299);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 46);
+            this.label6.Size = new System.Drawing.Size(105, 31);
             this.label6.TabIndex = 10;
             this.label6.Text = "Work days:";
             // 
@@ -149,110 +156,113 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 19F);
-            this.label7.Location = new System.Drawing.Point(498, 527);
+            this.label7.Location = new System.Drawing.Point(332, 343);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 46);
+            this.label7.Size = new System.Drawing.Size(59, 31);
             this.label7.TabIndex = 11;
             this.label7.Text = "Shift:";
             // 
-            // textBox1
+            // firstName
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(669, 266);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 26);
-            this.textBox1.TabIndex = 12;
-            this.textBox1.Text = "Nikolay";
+            this.firstName.Enabled = false;
+            this.firstName.Location = new System.Drawing.Point(446, 173);
+            this.firstName.Margin = new System.Windows.Forms.Padding(2);
+            this.firstName.Name = "firstName";
+            this.firstName.Size = new System.Drawing.Size(123, 20);
+            this.firstName.TabIndex = 12;
             // 
-            // textBox2
+            // lastName
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(669, 336);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 26);
-            this.textBox2.TabIndex = 13;
-            this.textBox2.Text = "Teofanov";
+            this.lastName.Enabled = false;
+            this.lastName.Location = new System.Drawing.Point(446, 218);
+            this.lastName.Margin = new System.Windows.Forms.Padding(2);
+            this.lastName.Name = "lastName";
+            this.lastName.Size = new System.Drawing.Size(123, 20);
+            this.lastName.TabIndex = 13;
             // 
-            // textBox3
+            // waiterID
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(669, 404);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(182, 26);
-            this.textBox3.TabIndex = 14;
-            this.textBox3.Text = "10334";
+            this.waiterID.Enabled = false;
+            this.waiterID.Location = new System.Drawing.Point(446, 263);
+            this.waiterID.Margin = new System.Windows.Forms.Padding(2);
+            this.waiterID.Name = "waiterID";
+            this.waiterID.Size = new System.Drawing.Size(123, 20);
+            this.waiterID.TabIndex = 14;
             // 
-            // textBox4
+            // workDays
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(669, 474);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(182, 26);
-            this.textBox4.TabIndex = 15;
-            this.textBox4.Text = "Mon, Tue, Fri, Sat, Sun";
+            this.workDays.Enabled = false;
+            this.workDays.Location = new System.Drawing.Point(446, 308);
+            this.workDays.Margin = new System.Windows.Forms.Padding(2);
+            this.workDays.Name = "workDays";
+            this.workDays.Size = new System.Drawing.Size(123, 20);
+            this.workDays.TabIndex = 15;
             // 
-            // radioButton1
+            // breakfastButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Enabled = false;
-            this.radioButton1.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
-            this.radioButton1.Location = new System.Drawing.Point(596, 534);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(128, 38);
-            this.radioButton1.TabIndex = 16;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Breakfast";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.breakfastButton.AutoSize = true;
+            this.breakfastButton.Enabled = false;
+            this.breakfastButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
+            this.breakfastButton.Location = new System.Drawing.Point(397, 347);
+            this.breakfastButton.Margin = new System.Windows.Forms.Padding(2);
+            this.breakfastButton.Name = "breakfastButton";
+            this.breakfastButton.Size = new System.Drawing.Size(90, 27);
+            this.breakfastButton.TabIndex = 16;
+            this.breakfastButton.Text = "Breakfast";
+            this.breakfastButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // lunchButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Enabled = false;
-            this.radioButton2.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
-            this.radioButton2.Location = new System.Drawing.Point(724, 534);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(96, 38);
-            this.radioButton2.TabIndex = 17;
-            this.radioButton2.Text = "Lunch";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.lunchButton.AutoSize = true;
+            this.lunchButton.Enabled = false;
+            this.lunchButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
+            this.lunchButton.Location = new System.Drawing.Point(483, 347);
+            this.lunchButton.Margin = new System.Windows.Forms.Padding(2);
+            this.lunchButton.Name = "lunchButton";
+            this.lunchButton.Size = new System.Drawing.Size(66, 27);
+            this.lunchButton.TabIndex = 17;
+            this.lunchButton.Text = "Lunch";
+            this.lunchButton.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // dinnerButton
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Enabled = false;
-            this.radioButton3.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
-            this.radioButton3.Location = new System.Drawing.Point(822, 534);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(102, 38);
-            this.radioButton3.TabIndex = 18;
-            this.radioButton3.Text = "Dinner";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.dinnerButton.AutoSize = true;
+            this.dinnerButton.Enabled = false;
+            this.dinnerButton.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
+            this.dinnerButton.Location = new System.Drawing.Point(548, 347);
+            this.dinnerButton.Margin = new System.Windows.Forms.Padding(2);
+            this.dinnerButton.Name = "dinnerButton";
+            this.dinnerButton.Size = new System.Drawing.Size(69, 27);
+            this.dinnerButton.TabIndex = 18;
+            this.dinnerButton.Text = "Dinner";
+            this.dinnerButton.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 19F);
-            this.label8.Location = new System.Drawing.Point(661, 167);
+            this.label8.Location = new System.Drawing.Point(422, 110);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(119, 46);
+            this.label8.Size = new System.Drawing.Size(83, 31);
             this.label8.TabIndex = 19;
             this.label8.Text = "PROFILE";
             // 
             // WaiterForm3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Cornsilk;
-            this.ClientSize = new System.Drawing.Size(1380, 969);
+            this.ClientSize = new System.Drawing.Size(920, 630);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dinnerButton);
+            this.Controls.Add(this.lunchButton);
+            this.Controls.Add(this.breakfastButton);
+            this.Controls.Add(this.workDays);
+            this.Controls.Add(this.waiterID);
+            this.Controls.Add(this.lastName);
+            this.Controls.Add(this.firstName);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -263,6 +273,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "WaiterForm3";
             this.Text = "WaiterForm3";
             this.Load += new System.EventHandler(this.WaiterForm3_Load);
@@ -283,13 +294,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.TextBox firstName;
+        private System.Windows.Forms.TextBox lastName;
+        private System.Windows.Forms.TextBox waiterID;
+        private System.Windows.Forms.TextBox workDays;
+        private System.Windows.Forms.RadioButton breakfastButton;
+        private System.Windows.Forms.RadioButton lunchButton;
+        private System.Windows.Forms.RadioButton dinnerButton;
         private System.Windows.Forms.Label label8;
     }
 }

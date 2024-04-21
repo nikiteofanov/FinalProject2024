@@ -27,8 +27,14 @@ namespace NEWFinalProject
             Form1 form1 = new Form1();
             LogInWater logInWater = new LogInWater();
             logInWater.Show();
-            form1.Close();
+            this.Hide();
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ManagerLogIn managerLogIn = new ManagerLogIn();
+            managerLogIn.Show();
         }
     }
 }
