@@ -13,7 +13,7 @@ namespace NEWFinalProject
 {
     public partial class LogInWater : Form
     {
-        string connection = @"Data Source=DESKTOP-S3RQ5UI\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True;Encrypt=False";
+        string connection = @"Data Source=LAB108PC18\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True";
         public string Username { get; private set; }
 
         public LogInWater()
@@ -23,7 +23,7 @@ namespace NEWFinalProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string stringConnection = @"Data Source=DESKTOP-S3RQ5UI\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True;Encrypt=False";
+            string stringConnection = @"Data Source=LAB108PC18\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True";
 
             Username = textBox1.Text;
 
@@ -74,6 +74,11 @@ namespace NEWFinalProject
                     MessageBox.Show("An error occurred: " + ex.Message);
                 }
             }
+        }
+
+        private void LogInWater_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

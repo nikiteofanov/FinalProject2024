@@ -23,7 +23,7 @@ namespace NEWFinalProject
 
         private void CreateNewOrderForm_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=DESKTOP-S3RQ5UI\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True;Encrypt=False";
+            string connectionString = @"Data Source=LAB108PC18\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True";
             string query = "SELECT FirstName, LastName, WaiterID FROM Waiters WHERE Username = @Username";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -57,5 +57,51 @@ namespace NEWFinalProject
                 }
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string connectionString = @"Data Source=LAB108PC18\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True;";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+                // Get data from the form
+                string tableId = TableIDComboBox.SelectedItem?.ToString() ?? ""; // Assuming TableIDComboBox is the name of your ComboBox
+                int tableID = Convert.ToInt32(tableId);
+
+                string appetizer = AppetizerComboBox.SelectedItem?.ToString() ?? ""; // Assuming AppetizerComboBox is the name of your ComboBox
+                string mainDish = MainDishComboBox.SelectedItem?.ToString() ?? ""; // Assuming MainDishComboBox is the name of your ComboBox
+                string dessert = DessertComboBox.SelectedItem?.ToString() ?? ""; // Assuming DessertComboBox is the name of your ComboBox
+
+                string softDrink = SoftDrinkComboBox.SelectedItem?.ToString() ?? ""; // Assuming SoftDrinkComboBox is the name of your ComboBox
+                string alcoholicDrink = AlcoholicDrinkComboBox.SelectedItem?.ToString() ?? ""; // Assuming AlcoholicDrinkComboBox is the name of your ComboBox
+                string hotDrink = HotDrinkComboBox.SelectedItem?.ToString() ?? ""; // Assuming HotDrinkComboBox is the name of your ComboBox
+
+                // Insert data into the Orders table
+                using (SqlConnection insertConnection = new SqlConnection(connectionString))
+                {
+                    insertConnection.Open();
+
+                    string insertQuery = "INSERT INTO Orders (TableID, Meals, Drinks) VALUES (@TableID, @Meals, @Drinks)";
+                    using (SqlCommand insertCmd = new SqlCommand(insertQuery, insertConnection))
+                    {
+                        insertCmd.Parameters.AddWithValue("@TableID", tableID);
+                        insertCmd.Parameters.AddWithValue("@Meals", $"{appetizer}, {mainDish}, {dessert}");
+                        insertCmd.Parameters.AddWithValue("@Drinks", $"{softDrink}, {alcoholicDrink}, {hotDrink}");
+
+                        insertCmd.ExecuteNonQuery();
+                    }
+                }
+
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WaiterForm3 waiterForm3 = new WaiterForm3(username);
+            waiterForm3.Show();
+            this.Hide();
+        }
     }
-}
+    }

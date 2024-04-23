@@ -33,7 +33,7 @@ namespace NEWFinalProject
 
         private void WaiterForm3_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=DESKTOP-S3RQ5UI\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True;Encrypt=False";
+            string connectionString = @"Data Source=LAB108PC18\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True";
             string query = "SELECT FirstName, LastName, WaiterID FROM Waiters WHERE Username = @Username";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
