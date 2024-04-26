@@ -89,7 +89,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(160, 429);
+            this.label4.Location = new System.Drawing.Point(160, 387);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(126, 48);
             this.label4.TabIndex = 9;
@@ -109,7 +109,7 @@
             "Cheese Platter",
             "Crispy Calamari",
             "Vegetable Spring Rolls"});
-            this.AppetizerComboBox.Location = new System.Drawing.Point(298, 473);
+            this.AppetizerComboBox.Location = new System.Drawing.Point(298, 431);
             this.AppetizerComboBox.Name = "AppetizerComboBox";
             this.AppetizerComboBox.Size = new System.Drawing.Size(236, 28);
             this.AppetizerComboBox.TabIndex = 10;
@@ -128,7 +128,7 @@
             "Shrimp Scampi with Linguine",
             "Thai Red Curry with Chicken",
             "Beef Tacos with Homemade Salsa"});
-            this.MainDishComboBox.Location = new System.Drawing.Point(560, 473);
+            this.MainDishComboBox.Location = new System.Drawing.Point(560, 431);
             this.MainDishComboBox.Name = "MainDishComboBox";
             this.MainDishComboBox.Size = new System.Drawing.Size(236, 28);
             this.MainDishComboBox.TabIndex = 11;
@@ -147,7 +147,7 @@
             "Crème Brûlée",
             "Flourless Chocolate Cake",
             "Mixed Berry Pavlova"});
-            this.DessertComboBox.Location = new System.Drawing.Point(825, 473);
+            this.DessertComboBox.Location = new System.Drawing.Point(825, 431);
             this.DessertComboBox.Name = "DessertComboBox";
             this.DessertComboBox.Size = new System.Drawing.Size(224, 28);
             this.DessertComboBox.TabIndex = 12;
@@ -156,7 +156,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(351, 431);
+            this.label5.Location = new System.Drawing.Point(351, 389);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(127, 29);
             this.label5.TabIndex = 13;
@@ -166,7 +166,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(647, 429);
+            this.label6.Location = new System.Drawing.Point(647, 387);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 29);
             this.label6.TabIndex = 14;
@@ -176,7 +176,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(889, 429);
+            this.label7.Location = new System.Drawing.Point(889, 387);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(108, 29);
             this.label7.TabIndex = 15;
@@ -186,7 +186,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Bahnschrift", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(150, 581);
+            this.label8.Location = new System.Drawing.Point(150, 539);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(137, 48);
             this.label8.TabIndex = 16;
@@ -196,7 +196,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label9.Location = new System.Drawing.Point(914, 581);
+            this.label9.Location = new System.Drawing.Point(914, 539);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 29);
             this.label9.TabIndex = 22;
@@ -206,7 +206,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label10.Location = new System.Drawing.Point(647, 581);
+            this.label10.Location = new System.Drawing.Point(647, 539);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(97, 29);
             this.label10.TabIndex = 21;
@@ -216,7 +216,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label11.Location = new System.Drawing.Point(383, 581);
+            this.label11.Location = new System.Drawing.Point(383, 539);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(55, 29);
             this.label11.TabIndex = 20;
@@ -233,7 +233,7 @@
             "Hot Chocolate",
             "Chai Tea Latte",
             "Herbal Tea (e.g., Chamomile, Peppermint)"});
-            this.HotDrinkComboBox.Location = new System.Drawing.Point(825, 623);
+            this.HotDrinkComboBox.Location = new System.Drawing.Point(825, 581);
             this.HotDrinkComboBox.Name = "HotDrinkComboBox";
             this.HotDrinkComboBox.Size = new System.Drawing.Size(224, 28);
             this.HotDrinkComboBox.TabIndex = 19;
@@ -250,7 +250,7 @@
             "Cosmopolitan",
             "Whiskey Sour",
             "Sangria"});
-            this.AlcoholicDrinkComboBox.Location = new System.Drawing.Point(560, 623);
+            this.AlcoholicDrinkComboBox.Location = new System.Drawing.Point(560, 581);
             this.AlcoholicDrinkComboBox.Name = "AlcoholicDrinkComboBox";
             this.AlcoholicDrinkComboBox.Size = new System.Drawing.Size(236, 28);
             this.AlcoholicDrinkComboBox.TabIndex = 18;
@@ -267,7 +267,7 @@
             "Lemonade",
             "Iced Tea",
             "Orange Soda"});
-            this.SoftDrinkComboBox.Location = new System.Drawing.Point(298, 623);
+            this.SoftDrinkComboBox.Location = new System.Drawing.Point(298, 581);
             this.SoftDrinkComboBox.Name = "SoftDrinkComboBox";
             this.SoftDrinkComboBox.Size = new System.Drawing.Size(236, 28);
             this.SoftDrinkComboBox.TabIndex = 17;
@@ -276,7 +276,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.DarkKhaki;
             this.button4.Font = new System.Drawing.Font("Bahnschrift Condensed", 17F);
-            this.button4.Location = new System.Drawing.Point(552, 765);
+            this.button4.Location = new System.Drawing.Point(552, 723);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(244, 60);
             this.button4.TabIndex = 25;
@@ -288,7 +288,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Bahnschrift", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(490, 276);
+            this.label12.Location = new System.Drawing.Point(490, 234);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(150, 48);
             this.label12.TabIndex = 26;
@@ -306,7 +306,7 @@
             "15",
             "16",
             "17"});
-            this.TableIDComboBox.Location = new System.Drawing.Point(668, 287);
+            this.TableIDComboBox.Location = new System.Drawing.Point(668, 245);
             this.TableIDComboBox.Name = "TableIDComboBox";
             this.TableIDComboBox.Size = new System.Drawing.Size(107, 28);
             this.TableIDComboBox.TabIndex = 27;
@@ -315,7 +315,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DarkKhaki;
             this.button1.Font = new System.Drawing.Font("Bahnschrift Condensed", 17F);
-            this.button1.Location = new System.Drawing.Point(1066, 870);
+            this.button1.Location = new System.Drawing.Point(1066, 867);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(244, 60);
             this.button1.TabIndex = 28;
@@ -326,7 +326,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::NEWFinalProject.Properties.Resources._855276_wine_512x512;
-            this.pictureBox2.Location = new System.Drawing.Point(1127, 581);
+            this.pictureBox2.Location = new System.Drawing.Point(1127, 539);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(160, 108);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -336,7 +336,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::NEWFinalProject.Properties.Resources._71908;
-            this.pictureBox1.Location = new System.Drawing.Point(1107, 431);
+            this.pictureBox1.Location = new System.Drawing.Point(1107, 389);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(190, 122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
