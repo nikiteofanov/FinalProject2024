@@ -23,7 +23,7 @@ namespace NEWFinalProject
 
         private void CreateNewOrderForm_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=LAB108PC18\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True";
+            string connectionString = @"Data Source=DESKTOP-S3RQ5UI\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True;Encrypt=False";
             string query = "SELECT FirstName, LastName, WaiterID FROM Waiters WHERE Username = @Username";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -60,7 +60,7 @@ namespace NEWFinalProject
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=LAB108PC18\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True;";
+            string connectionString = @"Data Source=DESKTOP-S3RQ5UI\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True;Encrypt=False;";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
@@ -82,14 +82,19 @@ namespace NEWFinalProject
                 {
                     insertConnection.Open();
 
-                    string insertQuery = "INSERT INTO Orders (TableID, Meals, Drinks) VALUES (@TableID, @Meals, @Drinks)";
+                    string insertQuery = "INSERT INTO Orders (TableID, Meals, Drinks) VALUES (@TableID, @Meals, @Drinks); SELECT SCOPE_IDENTITY();";
                     using (SqlCommand insertCmd = new SqlCommand(insertQuery, insertConnection))
                     {
                         insertCmd.Parameters.AddWithValue("@TableID", tableID);
                         insertCmd.Parameters.AddWithValue("@Meals", $"{appetizer}, {mainDish}, {dessert}");
                         insertCmd.Parameters.AddWithValue("@Drinks", $"{softDrink}, {alcoholicDrink}, {hotDrink}");
 
-                        insertCmd.ExecuteNonQuery();
+                        //insertCmd.ExecuteNonQuery();
+
+                        int orderID = Convert.ToInt32(insertCmd.ExecuteScalar());
+
+                        MessageBox.Show($"Order #{orderID} was made successfully!");
+
                     }
                 }
 

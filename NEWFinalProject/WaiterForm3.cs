@@ -29,12 +29,13 @@ namespace NEWFinalProject
         private void button4_Click(object sender, EventArgs e)
         {
             CreateNewOrderForm createNewOrderForm = new CreateNewOrderForm(username);
-            createNewOrderForm.ShowDialog();
+            createNewOrderForm.Show();
+            this.Hide();
         }
 
         private void WaiterForm3_Load(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=LAB108PC18\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True";
+            string connectionString = @"Data Source=DESKTOP-S3RQ5UI\SQLEXPRESS;Initial Catalog=RestaurantMangSystem;Integrated Security=True;Encrypt=False";
             string query = "SELECT FirstName, LastName, WaiterID FROM Waiters WHERE Username = @Username";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -120,8 +121,9 @@ namespace NEWFinalProject
 
     private void button5_Click(object sender, EventArgs e)
         {
-            ViewOrdersForm viewOrdersForm = new ViewOrdersForm();
+            ViewOrdersForm viewOrdersForm = new ViewOrdersForm(username);
             viewOrdersForm.Show();
+            this.Hide();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace NEWFinalProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ViewOrdersForm());
+            Application.Run(new Form1());
         }
     }
 }
